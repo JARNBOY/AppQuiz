@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6up-kY-9I4">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -11,7 +11,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="AppQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="AppQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MainView" customModule="AppQuiz" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,9 +44,12 @@
                                                 <rect key="frame" x="16" y="4" width="297" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GAc-2k-T1C"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="C1c-Os-8Wg" secondAttribute="bottom" constant="4" id="661-if-iEX"/>
                                             <constraint firstAttribute="trailing" secondItem="C1c-Os-8Wg" secondAttribute="trailing" constant="8" id="Sms-Nk-aZq"/>
@@ -58,18 +61,24 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loy-j3-PRp">
                                         <rect key="frame" x="16" y="175" width="321" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSW-cC-Tzg">
-                                                <rect key="frame" x="123" y="7.3333333333332575" width="76" height="35"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSW-cC-Tzg">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="50"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="START">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnStart_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wG0-ep-8Kl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.38431372549019605" green="0.0" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="JSW-cC-Tzg" secondAttribute="bottom" id="2t1-Ya-eRR"/>
                                             <constraint firstAttribute="height" constant="50" id="POA-0I-LF1"/>
+                                            <constraint firstItem="JSW-cC-Tzg" firstAttribute="top" secondItem="loy-j3-PRp" secondAttribute="top" id="YDT-wm-1Tk"/>
+                                            <constraint firstItem="JSW-cC-Tzg" firstAttribute="leading" secondItem="loy-j3-PRp" secondAttribute="leading" id="ruO-f5-gig"/>
+                                            <constraint firstAttribute="trailing" secondItem="JSW-cC-Tzg" secondAttribute="trailing" id="xdV-xq-e0p"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -116,8 +125,18 @@
                             <constraint firstItem="JUK-a2-HHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pT2-nq-SpR"/>
                             <constraint firstItem="Ukd-uv-HgT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vTE-o6-uyf"/>
                         </constraints>
+                        <connections>
+                            <outlet property="btnStart" destination="JSW-cC-Tzg" id="bRu-zG-6M7"/>
+                            <outlet property="usernameTextfield" destination="C1c-Os-8Wg" id="Vzx-Vf-KG4"/>
+                            <outlet property="viewBtnStart" destination="loy-j3-PRp" id="r96-px-5op"/>
+                            <outlet property="viewCenterInputName" destination="Ukd-uv-HgT" id="eRp-1X-09o"/>
+                            <outlet property="viewUsernameTextField" destination="85c-Xk-MvQ" id="gVp-jV-5HV"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="DbT-B9-58R"/>
+                    <connections>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="9Wr-h8-Oxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

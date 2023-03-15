@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Constants{
+class Constants {
     
     static let shared = Constants()
     
