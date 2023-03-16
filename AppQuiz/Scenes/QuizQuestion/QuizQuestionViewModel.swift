@@ -29,11 +29,9 @@ struct QuizQuestionViewModel {
     var isSelectedAnswer: Bool = false
     var mUserName: String? = nil
     var mCorrectAnswer: Int = 0
-    var delegatePresent:  QuizQuestionViewControllerDelegate? = nil
     
-    init(questions: [Question], delegatePresent: QuizQuestionViewControllerDelegate?) {
+    init(questions: [Question]) {
         self.mQuestionList = questions
-        self.delegatePresent = delegatePresent
         Constants.shared.TOTAL_QUESTIONS = "\(questions.count)"
     }
 }

@@ -14,11 +14,7 @@ protocol MainViewModelProtocol {
 }
 
 struct MainViewModel {
-    var user: User {
-        didSet {
-            saveConstantUser()
-        }
-    }
+    var user: User
     
     init(user: User) {
         self.user = user

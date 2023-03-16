@@ -53,6 +53,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="FINISH">
                                     <color key="baseForegroundColor" red="0.38431372549999998" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnFinish_click:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cfa-EN-h3i"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score is 9 out of 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktp-pV-fA6">
                                 <rect key="frame" x="0.0" y="592" width="393" height="26.333333333333371"/>
@@ -86,7 +89,15 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VPd-fZ-9hi" secondAttribute="trailing" id="i32-1z-txB"/>
                             <constraint firstItem="TDc-Lg-3XV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qH6-Y1-TFR"/>
                         </constraints>
+                        <connections>
+                            <outlet property="btnFinish" destination="XkS-CD-3IQ" id="LpV-60-1lb"/>
+                            <outlet property="lblScoreResult" destination="Ktp-pV-fA6" id="rtj-FP-P3A"/>
+                            <outlet property="lblUsername" destination="VPd-fZ-9hi" id="Hfp-5r-fN7"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="resultView" destination="5EZ-qb-Rvc" id="PrK-5c-j9J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -21,6 +21,11 @@ class MainViewController: UIViewController {
         setMainView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mainView.usernameTextfield.text = ""
+    }
+    
     //MARK: setup view
     
     private func setMainView() {
@@ -40,6 +45,7 @@ class MainViewController: UIViewController {
         guard let mainVM else { return }
         let usernameText = mainView.usernameText
         if mainVM.validateUserName(text: usernameText) {
+            mainVM.saveConstantUser()
             openQuizQuestionViewController()
         }
     }

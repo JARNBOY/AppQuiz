@@ -16,7 +16,6 @@ class Constants {
     var USER_NAME: String = "user_name"
     var TOTAL_QUESTIONS: String = "total_questions"
     var CORRECT_ANSWER: String = "correct_answers"
-    var MAX_PROGRESS_VALUE = 10
     
     // TODO (STEP 6: Create a list of questions using the Question data model class. And add all the flag images to the drawable folder to add it in the list.)
     // START

@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol QuizQuestionViewControllerDelegate {
-    func displayQuestion(question : Question)
-}
-
 class QuizQuestionViewController: UIViewController {
     
     //MARK: property
@@ -41,7 +37,7 @@ class QuizQuestionViewController: UIViewController {
     // MARK: - Function
     func getQuestionQuiz() {
         let questions = Constants.shared.getQuestions()
-        quizQuestionVM = QuizQuestionViewModel(questions: questions, delegatePresent: self)
+        quizQuestionVM = QuizQuestionViewModel(questions: questions)
     }
     
     func setQuestionList() {
@@ -133,10 +129,4 @@ class QuizQuestionViewController: UIViewController {
         }
     }
     
-}
-
-extension QuizQuestionViewController : QuizQuestionViewControllerDelegate {
-    func displayQuestion(question : Question) {
-        quizQuestionView.setQuestionDisplay(question: question, quizQuestionVM: self.quizQuestionVM)
-    }
 }
