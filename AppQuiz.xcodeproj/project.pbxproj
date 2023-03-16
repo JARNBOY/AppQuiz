@@ -24,10 +24,8 @@
 		FB9CE10129C0CE6200AE244C /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CE10029C0CE6200AE244C /* ResultViewModel.swift */; };
 		FB9CE10329C0CE8100AE244C /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CE10229C0CE8100AE244C /* ResultModel.swift */; };
 		FB9CE10529C0CEA300AE244C /* QuizQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CE10429C0CEA300AE244C /* QuizQuestionView.swift */; };
-		FB9CE10729C0CEBF00AE244C /* QuizQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CE10629C0CEBF00AE244C /* QuizQuestionModel.swift */; };
 		FB9CE10929C0CEC800AE244C /* QuizQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CE10829C0CEC800AE244C /* QuizQuestionViewModel.swift */; };
 		FB9CE10B29C0D3AC00AE244C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CE10A29C0D3AC00AE244C /* MainView.swift */; };
-		FB9CE10D29C0D3BA00AE244C /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CE10C29C0D3BA00AE244C /* MainModel.swift */; };
 		FB9CE10F29C0D3C200AE244C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CE10E29C0D3C200AE244C /* MainViewModel.swift */; };
 		FBB450AA29C21D1000F8F0EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB450A929C21D1000F8F0EA /* User.swift */; };
 		FBB450AF29C232C500F8F0EA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB450AE29C232C500F8F0EA /* UIColor.swift */; };
@@ -53,10 +51,8 @@
 		FB9CE10029C0CE6200AE244C /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 		FB9CE10229C0CE8100AE244C /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		FB9CE10429C0CEA300AE244C /* QuizQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionView.swift; sourceTree = "<group>"; };
-		FB9CE10629C0CEBF00AE244C /* QuizQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionModel.swift; sourceTree = "<group>"; };
 		FB9CE10829C0CEC800AE244C /* QuizQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionViewModel.swift; sourceTree = "<group>"; };
 		FB9CE10A29C0D3AC00AE244C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		FB9CE10C29C0D3BA00AE244C /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		FB9CE10E29C0D3C200AE244C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FBB450A929C21D1000F8F0EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FBB450AE29C232C500F8F0EA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -130,7 +126,6 @@
 				FB7BFF4529C073180024D2E9 /* Main.storyboard */,
 				FB7BFF4329C073180024D2E9 /* MainViewController.swift */,
 				FB9CE10A29C0D3AC00AE244C /* MainView.swift */,
-				FB9CE10C29C0D3BA00AE244C /* MainModel.swift */,
 				FB9CE10E29C0D3C200AE244C /* MainViewModel.swift */,
 			);
 			path = Main;
@@ -142,7 +137,6 @@
 				FB7BFF7129C0777E0024D2E9 /* QuizQuestionStoryboard.storyboard */,
 				FB7BFF7329C077980024D2E9 /* QuizQuestionViewController.swift */,
 				FB9CE10429C0CEA300AE244C /* QuizQuestionView.swift */,
-				FB9CE10629C0CEBF00AE244C /* QuizQuestionModel.swift */,
 				FB9CE10829C0CEC800AE244C /* QuizQuestionViewModel.swift */,
 			);
 			path = QuizQuestion;
@@ -242,10 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB9CE10D29C0D3BA00AE244C /* MainModel.swift in Sources */,
 				FB7BFF7829C077CB0024D2E9 /* ResultViewController.swift in Sources */,
 				FB9CE10129C0CE6200AE244C /* ResultViewModel.swift in Sources */,
-				FB9CE10729C0CEBF00AE244C /* QuizQuestionModel.swift in Sources */,
 				FB9CE0FD29C0B55700AE244C /* String.swift in Sources */,
 				FB9CE0FF29C0CE5600AE244C /* ResultView.swift in Sources */,
 				FB9CE10929C0CEC800AE244C /* QuizQuestionViewModel.swift in Sources */,

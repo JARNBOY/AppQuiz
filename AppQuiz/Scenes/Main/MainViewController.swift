@@ -9,10 +9,9 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    //MARK: property view
+    //MARK: property
     @IBOutlet var mainView: MainView!
     
-    //MARK: property data, viewModel
     private var mainVM : MainViewModel? = nil
     
     //MARK: life cycle
@@ -22,14 +21,14 @@ class MainViewController: UIViewController {
         setMainView()
     }
     
-    //MARK: function
+    //MARK: setup view
     
     private func setMainView() {
         mainView.setUpView()
         mainView.usernameTextfield.delegate = self
     }
 
-
+    // MARK: - Navigation
     func openQuizQuestionViewController() {
         let vc = UIStoryboard.init(name: "QuizQuestionStoryboard", bundle: Bundle.main).instantiateViewController(withIdentifier: "QuizQuestionViewController") as? QuizQuestionViewController
         self.navigationController?.pushViewController(vc!, animated: true)
